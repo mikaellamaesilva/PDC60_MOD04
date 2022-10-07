@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC60_MOD04.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="BlanchedAlmond">
+                <Label Text="Hello World!"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Blue"
+                       FontSize="32">
+                    <Label.GestureRecognizers>
+                        <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_Drag"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+            </Frame>
+            
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="true" Drop="DropGestureRecognizer_Drop"/>
+                </Frame.GestureRecognizers>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
